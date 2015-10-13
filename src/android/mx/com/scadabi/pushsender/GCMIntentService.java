@@ -71,7 +71,6 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
 
         try {
 			
-            //JSONObject json = new JSONObject().put(REGISTRATION_ID, regId);
 			String value = getRegIdURL(regId,PushPlugin.getSenderAppValue(),PushPlugin.getSenderGroupValue());
 			JSONObject json = new JSONObject().put(REGISTRATION_ID, value);
 
