@@ -40,12 +40,12 @@ or
 
 ## Use the plugin into the project (Example)
 To initialize the object PushNotification.
-
+```javascript
     var push = PushNotification.init({ "android": {"senderID": "12345679"},
             "ios": {"applicationid":"here your appid", "group-name":"here your group", 
                     "alert": "true", "badge": "true", "sound": "true"}, 
             "windows": {} } );
-
+```
 To receive your device ID notification.
 
     push.on('registration', function(data) {
