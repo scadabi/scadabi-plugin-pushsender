@@ -21,10 +21,10 @@
 
 Este plugin habilita la función de envío y recepción de notificaciones para dispositivos móviles con sistemas operativos Android, IOS y Windows de una forma sencilla, a su vez, SCADA BI ofrece los webservices para el envío de notificaciones desde otras instancias distintas a los dispositivos lo cual hace a su solución un sistema integral.
 
-## Supported Cordova Platforms
+## Plataformas Cordova soportadas
 
-* Android 4.0.0 or above
-* iOS 4.0.0 or above
+* Android 4.0.0 o superior
+* iOS 4.0.0 o superior
 
 ## Navigation Whitelist
 Controls which URLs the WebView itself can be navigated to. Applies to
