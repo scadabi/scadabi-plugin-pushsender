@@ -45,28 +45,33 @@ To initialize the object PushNotification.
          "android": {"senderID": "12345679"},
          "ios": {"applicationid":"here your appid", "group-name":"here your group", 
                  "alert": "true", "badge": "true", "sound": "true"}, 
-         "windows": {} } );
+         "windows": {} } 
+   );
 ```
 To receive your device ID notification.
 
-    push.on('registration', function(data) {
+```javascript
+   push.on('registration', function(data) {
          // data.registrationId
-    });
-
+   });
+```
 To receive notification
 
-    push.on('notification', function(data) {
+```javascript
+   push.on('notification', function(data) {
          // data.message,
          // data.title,
          // data.count,
          // data.sound,
          // data.image,
          // data.additionalData
-    });
+   });
+```
 
 To catch any error in every notification process
 
-    push.on('error', function(e) {
+```javascript
+   push.on('error', function(e) {
          // e.message
-    });
-
+   });
+```
