@@ -19,17 +19,19 @@
 
 # scadabi-plugin-pushsender
 
-Este plugin habilita la función de registro, envío y recepción de notificaciones para dispositivos móviles con sistemas operativos Android, IOS y Windows de una forma sencilla, a su vez, SCADA BI ofrece los webservices para el envío de notificaciones desde otras instancias distintas a los dispositivos lo cual hace a su solución un sistema integral.
+This plugin allows register, send and receive Push Notificarions for Android, IOS and Windows mobile devices in simple way, at the same time, SCADA BI offers the necessary Webservices in order to send notifications from other instances different to the mobile devices. This makes your solution in an integrated system.
 
 ## Plataformas Cordova soportadas
 
-* Android 4.0.0 o superior
-* iOS 4.0.0 o superior
+* Android 4.0.0 or above
+* iOS 4.0.0 or above
 
-## Instalación del plugin
-Para la instalación del plugin se ejecutará el siguiente comando dentro de su aplicación
+## Plugin Installation
+This requires phonegap/cordova CLI 5.0+ ( current stable v1.3.0 )
 
     cordova plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
+or
+    phonegap plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
 `config.xml`:
 
     <!-- Allow links to example.com -->
