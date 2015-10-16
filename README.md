@@ -48,10 +48,12 @@ To initialize the object PushNotification.
    );
 ```
 Parameters for Android
-| First Header  | Second Header |
+
+| Parameter  | Description |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| senderID  | Number of the project created on Google Developer Console  |
+| SenderApplication  | Number of the application created on SCADA BI PushSender  |
+| SenderGroup  | You can make differents groups for device, on this parameter you define which group will be for the current device  |
 
 To receive your device ID notification.
 
