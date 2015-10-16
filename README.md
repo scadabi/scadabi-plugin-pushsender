@@ -29,7 +29,7 @@ Este plugin habilita la función de registro, envío y recepción de notificacio
 ## Instalación del plugin
 Para la instalación del plugin se ejecutará el siguiente comando dentro de su aplicación
 
-`cordova plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender`
+    cordova plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
 `config.xml`:
 
     <!-- Allow links to example.com -->
