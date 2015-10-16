@@ -47,6 +47,12 @@ To initialize the object PushNotification.
          "windows": {} } 
    );
 ```
+Parameters for Android
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 To receive your device ID notification.
 
 ```javascript
@@ -75,7 +81,3 @@ To catch any error in every notification process
    });
 ```
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
