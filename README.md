@@ -17,7 +17,7 @@
          under the License.
 -->
 
-# cordova-plugin-whitelist
+# scadabi-plugin-pushsender
 
 This plugin implements a whitelist policy for navigating the application webview on Cordova 4.0
 
