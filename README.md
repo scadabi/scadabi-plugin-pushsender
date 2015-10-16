@@ -69,11 +69,12 @@ To receive your device ID notification.
          // data.registrationId
    });
 ```
-To receive notification
 
-| Variable reference  | Description |
+| Callback Parameter  | Description |
 | ------------- | ------------- |
 | data.registrationId  | This variable contains the value returned for SCADA BI PushSender  |
+
+To receive notification
 
 ```javascript
    push.on('notification', function(data) {
@@ -86,6 +87,15 @@ To receive notification
    });
 ```
 
+| Callback Parameter  | Description |
+| ------------- | ------------- |
+| data.message  | This variable contains the message of the received notification  |
+| data.title  | This variable contains the title of the received notification  |
+| data.count  | This variable contains the number of the received notification  |
+| data.sound  | This variable contains the sound of the received notification  |
+| data.image  | This variable contains the image of the received notification  |
+| data.additionalData  | This variable contains the addiotional data of the received notification  |
+
 To catch any error in every notification process
 
 ```javascript
@@ -93,4 +103,8 @@ To catch any error in every notification process
          // e.message
    });
 ```
+
+| Callback Parameter  | Description |
+| ------------- | ------------- |
+| e.message  | This variable contains the value returned for any issue occurred on the notification process  |
 
