@@ -74,3 +74,8 @@ To catch any error in every notification process
          // e.message
    });
 ```
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
