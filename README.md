@@ -55,6 +55,13 @@ Parameters for Android
 | SenderApplication  | Number of the application created on SCADA BI PushSender  |
 | SenderGroup  | You can make differents groups for device, on this parameter you define which group will be for the current device  |
 
+Parameters for IOS
+
+| Parameter  | Description |
+| ------------- | ------------- |
+| applicationid  | Number of the application created on SCADA BI PushSender  |
+| group-name  | You can make differents groups for device, on this parameter you define which group will be for the current device  |
+
 To receive your device ID notification.
 
 ```javascript
