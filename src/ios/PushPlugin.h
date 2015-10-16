@@ -40,17 +40,16 @@
 @property (nonatomic, copy) NSString *callbackId;
 @property (nonatomic, copy) NSString *notificationCallbackId;
 @property (nonatomic, copy) NSString *callback;
-
+@property (nonatomic, copy) NSString *applicationid;
+@property (nonatomic, copy) NSString *groupname;
 @property (nonatomic, strong) NSDictionary *notificationMessage;
 @property BOOL                          isInline;
 
 - (void)init:(CDVInvokedUrlCommand*)command;
 - (void)unregister:(CDVInvokedUrlCommand*)command;
-
 - (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 - (void)didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
-
 - (void)setNotificationMessage:(NSDictionary *)notification;
 - (void)notificationReceived;
-
+- (NSString *)getTokenId: (NSString *)tokenid;
 @end
