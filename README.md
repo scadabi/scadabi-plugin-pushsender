@@ -47,7 +47,7 @@ To initialize the object PushNotification.
          "windows": {} } 
    );
 ```
-Parameters for Android
+##### Parameters for Android
 
 | Parameter  | Description |
 | ------------- | ------------- |
@@ -55,7 +55,7 @@ Parameters for Android
 | SenderApplication  | Number of the application created on SCADA BI PushSender  |
 | SenderGroup  | You can make differents groups for device, on this parameter you define which group will be for the current device  |
 
-Parameters for IOS
+##### Parameters for IOS
 
 | Parameter  | Description |
 | ------------- | ------------- |
@@ -70,6 +70,10 @@ To receive your device ID notification.
    });
 ```
 To receive notification
+
+| Variable reference  | Description |
+| ------------- | ------------- |
+| data.registrationId  | This variable contains the value returned for SCADA BI PushSender  |
 
 ```javascript
    push.on('notification', function(data) {
