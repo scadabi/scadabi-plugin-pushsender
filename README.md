@@ -40,9 +40,8 @@ or
 ## Use the plugin into the project (Example)
 To initialize the object PushNotification.
 
-   var push = PushNotification.init({ "android": {"senderID": "12345679"},
+    var push = PushNotification.init({ "android": {"senderID": "12345679"},
             "ios": {"applicationid":"24181704688140304", "group-name":"broadcast", "alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
-
        push.on('registration', function(data) {
           // To receive your token: data.registrationId
        });
