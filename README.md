@@ -41,10 +41,9 @@ or
 To initialize the object PushNotification.
 
     var push = PushNotification.init({ "android": {"senderID": "12345679"},
-            "ios": {"applicationid":"24181704688140304", "group-name":"broadcast", "alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
-       push.on('registration', function(data) {
-          // To receive your token: data.registrationId
-       });
+            "ios": {"applicationid":"here your appid", "group-name":"here your group", 
+                    "alert": "true", "badge": "true", "sound": "true"}, 
+            "windows": {} } );
 
 
 On Android, this equates to sending an intent of type BROWSEABLE.
