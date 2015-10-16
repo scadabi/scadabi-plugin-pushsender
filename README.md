@@ -19,21 +19,18 @@
 
 # scadabi-plugin-pushsender
 
-Este plugin habilita la función de envío y recepción de notificaciones para dispositivos móviles con sistemas operativos Android, IOS y Windows de una forma sencilla, a su vez, SCADA BI ofrece los webservices para el envío de notificaciones desde otras instancias distintas a los dispositivos lo cual hace a su solución un sistema integral.
+Este plugin habilita la función de registro, envío y recepción de notificaciones para dispositivos móviles con sistemas operativos Android, IOS y Windows de una forma sencilla, a su vez, SCADA BI ofrece los webservices para el envío de notificaciones desde otras instancias distintas a los dispositivos lo cual hace a su solución un sistema integral.
 
 ## Plataformas Cordova soportadas
 
 * Android 4.0.0 o superior
 * iOS 4.0.0 o superior
 
-## Navigation Whitelist
-Controls which URLs the WebView itself can be navigated to. Applies to
-top-level navigations only.
+## Instalación del plugin
+Para la instalación del plugin se ejecutará el siguiente comando dentro de su aplicación
 
-Quirks: on Android it also applies to iframes for non-http(s) schemes.
-
-By default, navigations only to `file://` URLs, are allowed. To allow other
-other URLs, you must add `<allow-navigation>` tags to your `config.xml`:
+`cordova plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender`
+`config.xml`:
 
     <!-- Allow links to example.com -->
     <allow-navigation href="http://example.com/*" />
