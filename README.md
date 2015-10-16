@@ -28,28 +28,14 @@ This plugin allows register, send and receive Push Notificarions for Android, IO
 
 ## Plugin Installation
 This requires phonegap/cordova CLI 5.0+ ( current stable v1.3.0 )
+Now it is onlyo possible to install via repo url directly
 
     cordova plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
+
 or
+
     phonegap plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
-`config.xml`:
 
-    <!-- Allow links to example.com -->
-    <allow-navigation href="http://example.com/*" />
-
-    <!-- Wildcards are allowed for the protocol, as a prefix
-         to the host, or as a suffix to the path -->
-    <allow-havigation href="*://*.example.com/*" />
-
-    <!-- A wildcard can be used to whitelist the entire network,
-         over HTTP and HTTPS.
-         *NOT RECOMMENDED* -->
-    <allow-navigation href="*" />
-
-    <!-- The above is equivalent to these three declarations -->
-    <allow-navigation href="http://*/*" />
-    <allow-navigation href="https://*/*" />
-    <allow-navigation href="data:*" />
 
 ## Intent Whitelist
 Controls which URLs the app is allowed to ask the system to open.
