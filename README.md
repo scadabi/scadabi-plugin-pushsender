@@ -42,7 +42,7 @@ or
 To initialize the object PushNotification.
 ```javascript
    var push = PushNotification.init({ 
-         "android": {"senderID": "12345679"},
+         "android": {"senderID": "project number", "SenderApplication": "here your appid", "SenderGroup": "here your group"},
          "ios": {"applicationid":"here your appid", "group-name":"here your group", 
                  "alert": "true", "badge": "true", "sound": "true"}, 
          "windows": {} } 
