@@ -29,10 +29,11 @@
 
 @synthesize notificationMessage;
 @synthesize isInline;
-
 @synthesize callbackId;
 @synthesize notificationCallbackId;
 @synthesize callback;
+@synthesize applicationid;
+@synthesize groupname;
 
 
 - (void)unregister:(CDVInvokedUrlCommand*)command;
@@ -59,6 +60,8 @@
     id badgeArg = [iosOptions objectForKey:@"badge"];
     id soundArg = [iosOptions objectForKey:@"sound"];
     id alertArg = [iosOptions objectForKey:@"alert"];
+    self.applicationid = [iosOptions objectForKey:@"applicationid"];
+    self.groupname = [iosOptions objectForKey:@"group-name"];
     
     if (([badgeArg isKindOfClass:[NSString class]] && [badgeArg isEqualToString:@"true"]) || [badgeArg boolValue])
     {
@@ -165,10 +168,11 @@
     [results setValue:dev.model forKey:@"deviceModel"];
     [results setValue:dev.systemVersion forKey:@"deviceSystemVersion"];
     
-    NSString *sendText = @"Codigo de registro";
+    NSString *myNewToken = [self getTokenId:token];
+    NSLog( @"Token received: %@" , myNewToken ) ;
     // Send result to trigger 'registration' event but keep callback
     NSMutableDictionary* message = [NSMutableDictionary dictionaryWithCapacity:1];
-    [message setObject:sendText forKey:@"registrationId"];
+    [message setObject:myNewToken forKey:@"registrationId"];
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:message];
     [pluginResult setKeepCallbackAsBool:YES];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:self.callbackId];
@@ -275,6 +279,33 @@
     CDVPluginResult *commandResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:errorMessage];
     
     [self.commandDelegate sendPluginResult:commandResult callbackId:self.callbackId];
+}
+
+- (NSString *)getTokenId: (NSString *)tokenid
+{
+    NSDictionary *dictionary = @{@"action" : @"register", @"deviceid" : tokenid, @"applicationid" : self.applicationid, @"group-name" : self.groupname};
+    
+    NSError *err = nil;
+    NSData *messagee = [NSJSONSerialization dataWithJSONObject: dictionary
+                                                       options:0
+                                                         error:&err];
+    if (err)
+        NSLog(@"%s: JSON encode error: %@", __FUNCTION__, err);
+    
+    NSURL *apiURL = [NSURL URLWithString:@"https://mobile.scadabi.com.mx/cloud/messaging/"];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: apiURL];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:messagee];
+    NSURLResponse *serverResponse;
+    NSError *e;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request
+                                         returningResponse:&serverResponse
+                                                     error:&e];
+    NSString *myString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    return myString;
 }
 
 @end
