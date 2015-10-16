@@ -37,9 +37,16 @@ or
     phonegap plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
 
 
-## Example to use the plugin into your project
-Controls which URLs the app is allowed to ask the system to open.
-By default, no external URLs are allowed.
+## Use the plugin into the project (Example)
+To initialize the object PushNotification.
+
+   var push = PushNotification.init({ "android": {"senderID": "12345679"},
+            "ios": {"applicationid":"24181704688140304", "group-name":"broadcast", "alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
+
+       push.on('registration', function(data) {
+          // To receive your token: data.registrationId
+       });
+
 
 On Android, this equates to sending an intent of type BROWSEABLE.
 
