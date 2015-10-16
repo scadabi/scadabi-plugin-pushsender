@@ -21,7 +21,7 @@
 
 This plugin allows register, send and receive Push Notificarions for Android, IOS and Windows mobile devices in simple way, at the same time, SCADA BI offers the necessary Webservices in order to send notifications from other instances different to the mobile devices. This makes your solution in an integrated system.
 
-## Plataformas Cordova soportadas
+## Supported Platforms
 
 * Android 4.0.0 or above
 * iOS 4.0.0 or above
@@ -37,7 +37,7 @@ or
     phonegap plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
 
 
-## Intent Whitelist
+## Example to use the plugin into your project
 Controls which URLs the app is allowed to ask the system to open.
 By default, no external URLs are allowed.
 
