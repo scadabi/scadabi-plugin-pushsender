@@ -27,8 +27,9 @@ This plugin allows register, send and receive Push Notificarions for Android, IO
 * iOS 4.0.0 or above
 
 ## Plugin Installation
-This requires phonegap/cordova CLI 5.0+ ( current stable v1.3.0 )
-Now it is onlyo possible to install via repo url directly
+This requires phonegap/cordova CLI 5.0+ ( current stable v1.3.0 ).
+
+Now it is only possible to install via repo url directly
 
     cordova plugin add https://github.com/albertoaboytia/scadabi-plugin-pushsender
 
