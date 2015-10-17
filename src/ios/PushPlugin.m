@@ -226,6 +226,8 @@
                         [message setObject:value forKey:@"sound"];
                     } else if ([key isEqualToString:@"image"]) {
                         [message setObject:value forKey:@"image"];
+                    } else if ([key isEqualToString:@"groupName"]) {
+                        [message setObject:value forKey:@"groupName"];
                     } else {
                         [additionalData setObject:value forKey:key];
                     }
