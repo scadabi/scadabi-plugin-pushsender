@@ -96,7 +96,7 @@ To receive notification
 | data.sound  | This variable contains the sound of the received notification  |
 | data.image  | This variable contains the image of the received notification  |
 | data.additionalData  | This variable contains the addiotional data of the received notification  |
-| data.groupName  | This variable contains the group name if it was used of the received notification. If it was not used, you will receive the text "No data"  |
+| data.groupName  | This variable contains the group name if it was used in the received notification. If it was not used, you are going to receive the text "No data"  |
 
 To catch any error in every notification process
 
