@@ -108,4 +108,3 @@ To catch any error in every notification process
 | ------------- | ------------- |
 | e.message  | This variable contains the value returned for any issue occurred on the notification process  |
 
-![2015-08-25 16 08 00](https://cloud.githubusercontent.com/assets/353180/9472260/3655fa7a-4b22-11e5-8d87-20528112de16.png)
