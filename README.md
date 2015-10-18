@@ -110,3 +110,26 @@ To catch any error in every notification process
 | ------------- | ------------- |
 | e.message  | This variable contains the value returned for any issue occurred on the notification process  |
 
+
+## Web Service to send notifications
+Through any language, connect to the next server
+
+    https://mobile.scadabi.com.mx/cloud/messaging/
+
+Send infomation through POST method.
+
+    HTTP Method: POST
+
+Send JSON parameters.
+
+##### Parameters for single notification
+
+```json
+ {	
+	  'action':'send-push-group-devices',
+	  'appid':'SCADA BI Project number',
+	  'group-name':'Group name of devices to send',
+	  'message':'Text for notification',
+	  'title':'Title for notification'
+ }
+```
