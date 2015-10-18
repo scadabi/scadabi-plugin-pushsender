@@ -126,11 +126,11 @@ Send JSON parameters.
 
 ```javascript
  {	
-	  'action':'send-push-group-devices', //Do not change this parameter
-	  'appid':'here your project number SCADA BI',
-	  'group-name':'Group name of receiver devices',
-	  'message':'Text for notification',
-	  'title':'Title for notification'
+	  "action":"send-push-group-devices", //Do not change this parameter
+	  "appid":"here your project number SCADA BI",
+	  "group-name":"Group name of receiver devices",
+	  "message":"Text for notification",
+	  "title":"Title for notification"
  }
 ```
 ##### Parameters for notification with Application Image
@@ -139,13 +139,13 @@ The parameters needs to be the same of single notification and add the news. For
 
 ```javascript
  {	
-	  'action':'send-push-group-devices', //Do not change this parameter
-	  'appid':'here your project number SCADA BI',
-	  'group-name':'Group name of receiver devices',
-	  'message':'Text for notification',
-	  'title':'Title for notification',
+	  "action":"send-push-group-devices", //Do not change this parameter
+	  "appid":"here your project number SCADA BI",
+	  "group-name":"Group name of receiver devices",
+	  "message":"Text for notification",
+	  "title":"Title for notification",
 	  
-	  'image-app':'URL of image'
+	  "image-app":"URL of image"
  }
 ```
 
@@ -155,14 +155,14 @@ The parameters needs to be the same of single notification and add the news. For
 
 ```javascript
  {	
-	  'action':'send-push-group-devices', //Do not change this parameter
-	  'appid':'here your project number SCADA BI',
-	  'group-name':'Group name of receiver devices',
-	  'message':'Text for notification',
-	  'title':'Title for notification',
+	  "action":"send-push-group-devices", //Do not change this parameter
+	  "appid":"here your project number SCADA BI",
+	  "group-name":"Group name of receiver devices",
+	  "message":"Text for notification",
+	  "title":"Title for notification",
 	  
-	  'push-style':'picture', //Do not change this parameter
-	  'push-picture':'URL of picture'
+	  "push-style":"picture", //Do not change this parameter
+	  "push-picture":"URL of picture"
  }
 ```
 
