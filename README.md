@@ -126,10 +126,56 @@ Send JSON parameters.
 
 ```javascript
  {	
-	  'action':'send-push-group-devices',
-	  'appid':'SCADA BI Project number',
-	  'group-name':'Group name of devices to send',
+	  'action':'send-push-group-devices', //Do not change this parameter
+	  'appid':'here your project number SCADA BI',
+	  'group-name':'Group name of receiver devices',
 	  'message':'Text for notification',
 	  'title':'Title for notification'
  }
 ```
+##### Parameters for notification with Application Image
+
+The parameters needs to be the same of single notification and add the news. For example.
+
+```javascript
+ {	
+	  'action':'send-push-group-devices', //Do not change this parameter
+	  'appid':'here your project number SCADA BI',
+	  'group-name':'Group name of receiver devices',
+	  'message':'Text for notification',
+	  'title':'Title for notification',
+	  
+	  'image-app':'URL of image'
+ }
+```
+
+##### Parameters for notification with Picture style
+
+The parameters needs to be the same of single notification and add the news. For example.
+
+```javascript
+ {	
+	  'action':'send-push-group-devices', //Do not change this parameter
+	  'appid':'here your project number SCADA BI',
+	  'group-name':'Group name of receiver devices',
+	  'message':'Text for notification',
+	  'title':'Title for notification',
+	  
+	  'push-style':'picture', //Do not change this parameter
+	  'push-picture':'URL of picture'
+ }
+```
+
+##### Description for each parameter to send notifications.
+
+| Parameter  | Description |
+| ------------- | ------------- |
+| action  | It is to identify the type of parameter to send. To send notification to a group, you need to use 'send-push-group-devices'  |
+| appid  | Number of the application created on SCADA BI PushSender  |
+| group-name  | Name of group that devices were registered  |
+| message  | Text to display in the notification  |
+| title  | Title to display in the notification  |
+| image-app  | URL for image to display in application icon  |
+| push-style  | Identify the style for notification, for picture it needs to be 'picture'  |
+| push-picture  | URL fot picture to display in notification  |
+
