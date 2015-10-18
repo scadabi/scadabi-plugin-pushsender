@@ -124,7 +124,7 @@ Send JSON parameters.
 
 ##### Parameters for single notification
 
-```json
+```javascript
  {	
 	  'action':'send-push-group-devices',
 	  'appid':'SCADA BI Project number',
