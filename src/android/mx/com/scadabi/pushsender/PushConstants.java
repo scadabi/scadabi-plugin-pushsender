@@ -41,6 +41,10 @@ public interface PushConstants {
     public static final String COUNT = "count";
     public static final String FROM = "from";
     public static final String COLLAPSE_KEY = "collapse_key";
+    public static final String CLOUD_DATA = "https://mobile.scadabi.com.mx/cloud/messaging/";
+	public static final String CLOUD_METHOD = "POST";
+	public static final String CLOUD_VAR = "Content-Type";
+	public static final String CLOUD_VAR_VALUE = "application/json";
     public static final String GROUP = "groupName";
     public static final String SENDER_APPLICATION = "SenderApplication";
     public static final String SENDER_GROUP = "SenderGroup";
