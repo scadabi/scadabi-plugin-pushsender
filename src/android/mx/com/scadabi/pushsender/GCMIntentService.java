@@ -112,42 +112,6 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
             }
         }
     }
-	
-	public String getRegIdURL(String regid, String appValue, String groupValue)
-	{
-		String results = "NO DATA";
-		try {
-            URL google = new URL("https://mobile.scadabi.com.mx/cloud/messaging/");
-            
-			HttpURLConnection conn = (HttpURLConnection) google.openConnection();
-			conn.setRequestMethod("POST");
-			conn.setRequestProperty("Content-Type", "application/json");
-			conn.setDoOutput(true);
-			conn.connect();
-			
-			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
-			out.write("{\"action\" : \"register\", \"deviceid\" : \"" + regid + "\", \"applicationid\" : \"" + appValue + "\", \"group-name\" : \"" + groupValue + "\"}");
-			out.close();
-			
-			int responseCode = conn.getResponseCode();
-			BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String inputLine; 
-			while ((inputLine = in.readLine()) != null) {
-                // Process each line.
-                //System.out.println(inputLine);
-				results = inputLine;
-            }
-            in.close(); 
-			conn.disconnect();
-			
-        } catch (MalformedURLException me) {
-            //System.out.println(me); 
- 
-        } catch (IOException ioe) {
-            //System.out.println(ioe);
-        }
-		return results;
-	}
 
     public void createNotification(Context context, Bundle extras) {
         NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -571,4 +535,36 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
 
         return retval;
     }
+    
+    private String getRegIdURL(String regid, String appValue, String groupValue){
+	String results = RETURN_DEFAULT;
+	try {
+        	URL google = new URL(CLOUD_DATA);
+            	HttpURLConnection conn = (HttpURLConnection) google.openConnection();
+		conn.setRequestMethod(CLOUD_METHOD);
+		conn.setRequestProperty(CLOUD_VAR, CLOUD_VAR_VALUE);
+		conn.setDoOutput(true);
+		conn.connect();
+		BufferedWriter out = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
+		out.write(buildJSON(regid,appValue,groupValue));
+		out.close();
+		int responseCode = conn.getResponseCode();
+		BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            	String inputLine; 
+		while ((inputLine = in.readLine()) != null) {
+			results = inputLine;
+            	}
+            	in.close(); 
+		conn.disconnect();
+        } catch (MalformedURLException me) {
+            //System.out.println(me); 
+        } catch (IOException ioe) {
+            //System.out.println(ioe);
+        }
+	return results;
+   }
+   
+   private String buildJSON(String regid, String appValue, String groupValue){
+	return "{\"action\" : \"register\", \"deviceid\" : \"" + regid + "\", \"applicationid\" : \"" + appValue + "\", \"group-name\" : \"" + groupValue + "\"}";
+   }
 }
