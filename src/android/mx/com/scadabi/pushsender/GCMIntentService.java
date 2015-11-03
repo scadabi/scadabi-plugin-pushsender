@@ -249,7 +249,7 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
         }
     }
 
-    private void setNotificationCount(Bundle extras, NotificationCompat.Builder mBuilder) {
+    private void setNotificationCount(Bundle extras, NotificationCompat.Builder mBuilde, Context context) {
         String msgcnt = getString(extras, MSGCNT);
         if (msgcnt == null) {
             msgcnt = getString(extras, BADGE);
