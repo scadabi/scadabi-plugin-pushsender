@@ -98,6 +98,9 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
                 sendExtras(gCachedExtras);
                 gCachedExtras = null;
             }
+            
+            try	{ SenderBadges.setBadge(getApplicationContext(), 0); }
+	    catch(Exception er){ }
 
         } else if (UNREGISTER.equals(action)) {
 
