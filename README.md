@@ -85,6 +85,7 @@ To receive notification
          // data.image,
          // data.additionalData
          // data.groupName
+         // data.messageInformation
    });
 ```
 
@@ -97,6 +98,7 @@ To receive notification
 | data.image  | This variable contains the image of the received notification  |
 | data.additionalData  | This variable contains the addiotional data of the received notification  |
 | data.groupName  | This variable contains the group name if it was used in the received notification. If it was not used, you are going to receive the text "No data"  |
+| data.messageInformation  | This variable contains additional information that you want to receive from the application server.  |
 
 To catch any error in every notification process
 
@@ -130,7 +132,10 @@ Send JSON parameters.
 	  "appid":"here your project number SCADA BI",
 	  "group-name":"Group name of receiver devices",
 	  "message":"Text for notification",
-	  "title":"Title for notification"
+	  "title":"Title for notification",
+	  
+	  "badge":"3",
+	  "message-information":"additional information to send to devices"
  }
 ```
 ##### Parameters for notification with Application Image
@@ -145,7 +150,10 @@ The parameters needs to be the same of single notification and add the news. For
 	  "message":"Text for notification",
 	  "title":"Title for notification",
 	  
-	  "image-app":"URL of image"
+	  "image-app":"URL of image",
+	  
+	  "badge":"3",
+	  "message-information":"additional information to send to devices"
  }
 ```
 
@@ -162,7 +170,10 @@ The parameters needs to be the same of single notification and add the news. For
 	  "title":"Title for notification",
 	  
 	  "push-style":"picture", //Do not change this parameter
-	  "push-picture":"URL of picture"
+	  "push-picture":"URL of picture",
+	  
+	  "badge":"3",
+	  "message-information":"additional information to send to devices"
  }
 ```
 
@@ -178,4 +189,6 @@ The parameters needs to be the same of single notification and add the news. For
 | image-app  | URL for image to display in application icon  |
 | push-style  | Identify the style for notification, for picture it needs to be 'picture'  |
 | push-picture  | URL fot picture to display in notification  |
+| message-information  | You can use this parameter in order to send information to devices, this is used to send additional information  |
+| badge  | You can use this parameter to send the number of pending notifications to user, THIS PARAMETER NEEDS TO BE INTEGER  |
 
