@@ -1,0 +1,42 @@
+{
+  "name": "scadabi-plugin-pushsender",
+  "version": "1.0.1",
+  "description": "This plugin allows your application to receive push notifications on Android, iOS, WP8 and Windows8 devices.",
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android",
+      "windows8",
+      "windows",
+      "wp8",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://mobile.scadabi.com.mx/repos/cordova/scadabi-plugin-pushsender"
+  },
+  "keywords": [
+    "cordova",
+    "pushsender",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-wp8",
+    "cordova-browser"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4.0.0-dev"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.0.0-dev"
+    }
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
+}
