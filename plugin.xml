@@ -48,6 +48,15 @@
 		</config-file>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<!-- Samsung -->
+    			<uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    			<uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    			<!-- Sony -->
+    			<uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    			<!-- HTC -->
+    			<uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    			<uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+			
 			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 			<uses-permission android:name="android.permission.WAKE_LOCK" />
 			<uses-permission android:name="android.permission.VIBRATE"/>
@@ -76,7 +85,16 @@
 		<source-file src="src/android/mx/com/scadabi/pushsender/PushConstants.java" target-dir="src/mx/com/scadabi/pushsender/" />
 		<source-file src="src/android/mx/com/scadabi/pushsender/PushHandlerActivity.java" target-dir="src/mx/com/scadabi/pushsender/" />
 		<source-file src="src/android/mx/com/scadabi/pushsender/PushPlugin.java" target-dir="src/mx/com/scadabi/pushsender/" />
-
+		<source-file src="src/android/mx/com/scadabi/pushsender/SenderBadges.java" target-dir="src/mx/com/scadabi/pushsender/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/BadgesNotSupportedException.java" target-dir="src/mx/com/scadabi/pushsender/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/BadgeProvider.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/BadgeProviderFactory.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/HomePackageIdentify.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/HtcBadgeProvider.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/LGBadgeProvider.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/NullBadgeProvider.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/SamsungBadgeProvider.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
+		<source-file src="src/android/mx/com/scadabi/pushsender/providers/SonyBadgeProvider.java" target-dir="src/mx/com/scadabi/pushsender/providers/" />
 	</platform>
 
 	<!-- ios -->
