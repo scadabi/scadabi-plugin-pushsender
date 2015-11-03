@@ -49,4 +49,5 @@ public interface PushConstants {
     public static final String GROUP = "groupName";
     public static final String SENDER_APPLICATION = "SenderApplication";
     public static final String SENDER_GROUP = "SenderGroup";
+    public static final String MESSAGE_INFORMATION = "messageInformation";
 }
