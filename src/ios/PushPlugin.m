@@ -228,6 +228,8 @@
                         [message setObject:value forKey:@"image"];
                     } else if ([key isEqualToString:@"groupName"]) {
                         [message setObject:value forKey:@"groupName"];
+                    } else if ([key isEqualToString:@"messageInformation"]) {
+                        [message setObject:value forKey:@"messageInformation"];
                     } else {
                         [additionalData setObject:value forKey:key];
                     }
