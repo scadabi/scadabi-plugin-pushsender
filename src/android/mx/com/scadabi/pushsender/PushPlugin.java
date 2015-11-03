@@ -236,6 +236,8 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
                     json.put(IMAGE, value);
                 } else if (key.equals(GROUP)) {
                     json.put(GROUP, value);
+                }else if (key.equals(MESSAGE_INFORMATION)) {
+                    json.put(MESSAGE_INFORMATION, value);
                 }else if (key.equals(CALLBACK)) {
                     json.put(CALLBACK, value);
                 }
