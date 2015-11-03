@@ -215,7 +215,7 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
         /*
          * Notification count
          */
-        setNotificationCount(extras, mBuilder);
+        setNotificationCount(extras, mBuilder, context);
 
         /*
          * Notication add actions
@@ -256,6 +256,9 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
         }
         if (msgcnt != null) {
             mBuilder.setNumber(Integer.parseInt(msgcnt));
+	    try{
+	        SenderBadges.setBadge(context, Integer.parseInt(msgcnt));
+	    }catch(Exception er){ }
         }
     }
 
