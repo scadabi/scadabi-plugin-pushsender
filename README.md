@@ -200,6 +200,12 @@ The parameters needs to be the same of single notification and add the news. For
 | message-information  | You can use this parameter in order to send information to devices, this is used to send additional information  |
 | badge  | You can use this parameter to send the number of pending notifications to user, THIS PARAMETER NEEDS TO BE INTEGER  |
 
+Android
+
+All the message that the plugin receive are with the max priority, for that reason all message appear in front of whatever application that you have open.
+
+ ![2015-11-03 07 42 00](http://core0.staticworld.net/images/article/2015/06/lollipop-heads-up-notifications-100591800-large.idge.jpg)
+
 ## Pushsender Badges
 
 This plugin also support Badges on Android and IOS. This function gives you additional information in your application, you can watch the number of pending notifications on the left top corner of the app icon.
