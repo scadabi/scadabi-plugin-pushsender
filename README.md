@@ -138,6 +138,13 @@ Send JSON parameters.
 	  "message-information":"additional information to send to devices"
  }
 ```
+
+##### Android Notifications
+
+On IOS devices the implementation looks like the next image.
+
+![2015-11-03 07 42 00](http://i.kinja-img.com/gawker-media/image/upload/rgprkotvegihbpenukkh.jpg)
+
 ##### Parameters for notification with Application Image
 
 The parameters needs to be the same of single notification and add the news. For example.
@@ -191,9 +198,6 @@ The parameters needs to be the same of single notification and add the news. For
 | push-picture  | URL fot picture to display in notification  |
 | message-information  | You can use this parameter in order to send information to devices, this is used to send additional information  |
 | badge  | You can use this parameter to send the number of pending notifications to user, THIS PARAMETER NEEDS TO BE INTEGER  |
-
-
-
 
 ## Pushsender Badges
 
