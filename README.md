@@ -192,3 +192,8 @@ The parameters needs to be the same of single notification and add the news. For
 | message-information  | You can use this parameter in order to send information to devices, this is used to send additional information  |
 | badge  | You can use this parameter to send the number of pending notifications to user, THIS PARAMETER NEEDS TO BE INTEGER  |
 
+
+
+Produces the following notification.
+
+![2015-07-24 02 17 55](https://cloud.githubusercontent.com/assets/353180/8866900/2df0ab06-3190-11e5-9a81-fdb85bb0f5a4.png)
