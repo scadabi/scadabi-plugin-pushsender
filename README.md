@@ -212,9 +212,7 @@ The badges only support the next launchers.
 
 ## Android devices
 
-On Android devices the implementation looks like the next images.
-
-Samsung devices.
+On Android devices the implementation looks like the next image.
 
 ![2015-11-03 07 42 00](http://i.stack.imgur.com/JCULE.png)
 
