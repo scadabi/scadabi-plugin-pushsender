@@ -139,9 +139,7 @@ Send JSON parameters.
  }
 ```
 
-##### Android Notifications
-
-On IOS devices the implementation looks like the next image.
+Android
 
 ![2015-11-03 07 42 00](http://i.kinja-img.com/gawker-media/image/upload/rgprkotvegihbpenukkh.jpg)
 
@@ -163,6 +161,9 @@ The parameters needs to be the same of single notification and add the news. For
 	  "message-information":"additional information to send to devices"
  }
 ```
+Android
+
+![2015-11-03 07 42 00](http://i.stack.imgur.com/pk6Mc.png)
 
 ##### Parameters for notification with Picture style
 
