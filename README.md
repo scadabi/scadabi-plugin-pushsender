@@ -141,7 +141,7 @@ Send JSON parameters.
 
 Android
 
-![2015-11-03 07 42 00](http://i.stack.imgur.com/jjD5k.png)
+![2015-11-03 07 42 00](https://www.google.com.mx/search?tbm=isch&tbs=rimg%3ACZsdpF1XhQ-PIjgu0aJWDtSzYC1RlkluwFeq2b73oyVZqJuJqoefKPo16u1Jjfh_11oxb0tAAV2AW_18uhE4Nup12OoioSCS7RolYO1LNgEdyXMc3Tqo8EKhIJLVGWSW7AV6oRwtUy-Q33snAqEgnZvvejJVmomxEbWLosl9Dv6ioSCYmqh58o-jXqEVsqrYqq1_122KhIJ7UmN-H_1WjFsRW7wDIZnYcGoqEgnS0ABXYBb_1yxFNaZ7BdPH53CoSCaETg26nXY6iERpEpxio7Zkn&q=android%20notification%20picture%20lollipop&ved=0CAkQ9C9qFQoTCKy3vMiO9sgCFQd4JgodVIEPiQ&biw=1518&bih=723&dpr=0.9&bav=on.2,or.r_cp.&bvm=bv.106379543,d.eWE&ei=AqI5VseyB8f1mAHB-6WYCA&emsg=NCSR&noj=1#emsg=NCSR&imgrc=7UmN-H_WjFuSPM%3A)
 
 ##### Parameters for notification with Application Image
 
