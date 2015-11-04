@@ -141,7 +141,7 @@ Send JSON parameters.
 
 Android
 
-![2015-11-03 07 42 00](http://i.kinja-img.com/gawker-media/image/upload/rgprkotvegihbpenukkh.jpg)
+![2015-11-03 07 42 00](http://i.stack.imgur.com/jjD5k.png)
 
 ##### Parameters for notification with Application Image
 
