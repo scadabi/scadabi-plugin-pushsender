@@ -193,7 +193,24 @@ The parameters needs to be the same of single notification and add the news. For
 | badge  | You can use this parameter to send the number of pending notifications to user, THIS PARAMETER NEEDS TO BE INTEGER  |
 
 
+## Pushsender Badges
 
-Produces the following notification.
+This plugin also support Badges on Android and IOS. This function gives you additional information in your application, you can watch the number of pending notifications on the left top corner of the app icon.
 
-![2015-07-24 02 17 55](https://cloud.githubusercontent.com/assets/353180/8866900/2df0ab06-3190-11e5-9a81-fdb85bb0f5a4.png)
+## Supported Platforms
+
+The badges only support the next OS.
+* Android 5.0.0 or above
+  * Samsung devices.
+  * Sony devices.
+  * HTC devices.
+  * LG devices.
+* iOS 4.0.0 or above
+  * All devices from Apple.
+
+## Android devices
+
+On Android devices the implementation looks like the next images.
+
+Samsung devices.
+![2015-11-03 07 42 00](http://i.stack.imgur.com/JCULE.png)
