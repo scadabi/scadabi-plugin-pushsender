@@ -201,7 +201,7 @@ This plugin also support Badges on Android and IOS. This function gives you addi
 
 ## Supported Platforms
 
-The badges only support the next OS.
+The badges only support the next launchers.
 * Android 5.0.0 or above
   * Samsung devices.
   * Sony devices.
@@ -217,3 +217,9 @@ On Android devices the implementation looks like the next images.
 Samsung devices.
 
 ![2015-11-03 07 42 00](http://i.stack.imgur.com/JCULE.png)
+
+## IOS devices
+
+On IOS devices the implementation looks like the next image.
+
+![2015-11-03 07 42 00](http://media.idownloadblog.com/wp-content/uploads/2014/02/ClassicBadges-Dock.png)
