@@ -12,6 +12,7 @@ import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -453,7 +454,11 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
                     }
                 }
             }
-        }
+        }else
+	{
+		Bitmap bitmap = ((BitmapDrawable) getPackageManager().getApplicationIcon(getApplicationInfo()) ).getBitmap();
+		mBuilder.setLargeIcon(bitmap);
+	}
     }
 
     private void setNotificationSmallIcon(Context context, Bundle extras, String packageName, Resources resources, NotificationCompat.Builder mBuilder, String localIcon) {
@@ -467,10 +472,10 @@ public class GCMIntentService extends GCMBaseIntentService implements PushConsta
             iconId = resources.getIdentifier(localIcon, DRAWABLE, packageName);
             Log.d(LOG_TAG, "using icon from plugin options");
         }
-        if (iconId == 0) {
-            Log.d(LOG_TAG, "no icon resource found - using application icon");
+        else{
+	    Log.d(LOG_TAG, "no icon resource found - using application icon");
             iconId = context.getApplicationInfo().icon;
-        }
+	}
         mBuilder.setSmallIcon(iconId);
     }
 
