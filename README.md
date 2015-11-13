@@ -237,4 +237,4 @@ On IOS devices the implementation looks like the next image.
 
 The use case diagram for UML represents the form that the plugin works with devices and webservices.
 
-![2015-11-12 11 33 00](http://mobile.scadabi.com.mx/cloud/messaging/img/scadabi-plugin-pushsender-use-case-uml.png)
+![2015-11-12 11 33 00](http://mobile.scadabi.com.mx/cloud/messaging/img/pushsender-use-case-uml.png)
