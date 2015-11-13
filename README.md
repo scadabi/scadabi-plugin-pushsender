@@ -232,3 +232,9 @@ On Android devices the implementation looks like the next image.
 On IOS devices the implementation looks like the next image.
 
 ![2015-11-03 07 42 00](http://media.idownloadblog.com/wp-content/uploads/2014/02/ClassicBadges-Dock.png)
+
+## UML Documentation
+
+The use case diagram for UML represents the form that the plugin works with devices and webservices.
+
+![2015-11-03 07 42 00](http://mobile.scadabi.com.mx/cloud/messaging/img/scadabi-plugin-pushsender-use-case-uml.png)
