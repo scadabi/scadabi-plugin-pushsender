@@ -199,6 +199,7 @@ The parameters needs to be the same of single notification and add the news. For
 | push-picture  | URL fot picture to display in notification  |
 | message-information  | You can use this parameter in order to send information to devices, this is used to send additional information  |
 | badge  | You can use this parameter to send the number of pending notifications to user, THIS PARAMETER NEEDS TO BE INTEGER  |
+| sound-file | Name of the file without extension, for example the file is: example.wav, the value is going to be example  |
 
 Android
 
@@ -232,6 +233,30 @@ On Android devices the implementation looks like the next image.
 On IOS devices the implementation looks like the next image.
 
 ![2015-11-03 07 42 00](http://media.idownloadblog.com/wp-content/uploads/2014/02/ClassicBadges-Dock.png)
+
+## Custom Sound Implementation
+
+In order to assign custom sounds in your proyect you have to include the parameter "sound-file" in JSON code. The next javascript code
+shows an example that you have to use in your server code.
+
+```javascript
+ {	
+	  "sound-file":"name of the file without extension, for example the file is: example.wav, the value is going to be example"
+ }
+```
+
+In the Mobile proyect side you have to attach your file. It is depending of the operative system.
+
+### Android Devices
+
+In order to attach you file in the project you need to copy the file sound in the location "res/raw". The example is showing in the next image. Note: if the folder "raw" does not exist you have to create it.
+
+![2015-12-14 10 30 00](http://mobile.scadabi.com.mx/cloud/messaging/img/androidsoundexample.png)
+
+### IOS Devices
+
+In order for your your notification to play a custom sound you will need to add the files to root of your iOS project. The files must be in the proper format. See the [Local and Remote Notification Programming Guide](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/IPhoneOSClientImp.html#//apple_ref/doc/uid/TP40008194-CH103-SW6) for more info on proper file formats and how to convert existing sound files.
+
 
 ## UML Documentation
 
