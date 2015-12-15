@@ -255,8 +255,24 @@ In order to attach you file in the project you need to copy the file sound in th
 
 ### IOS Devices
 
-In order for your your notification to play a custom sound you will need to add the files to root of your iOS project. The files must be in the proper format. See the [Local and Remote Notification Programming Guide](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/IPhoneOSClientImp.html#//apple_ref/doc/uid/TP40008194-CH103-SW6) for more info on proper file formats and how to convert existing sound files.
+For remote notifications in iOS, you can specify a custom sound that iOS plays when it presents a local or remote notification for an app. The sound files can be in the main bundle (A bundle is a directory in the file system that groups executable code and related resources such as images and sounds together in one place.) of the client app or in the Library/Sounds folder of the app’s data container.
 
+Custom alert sounds are played by the iOS system-sound facility, so they must be in one of the following audio data formats:
+
+* Linear PCM
+* MA4 (IMA/ADPCM)
+* µLaw
+* aLaw
+
+You can package the audio data in an aiff, wav, or caf file. Then, in Xcode, add the sound file to your project as a nonlocalized resource of the app bundle or to the Library/Sounds folder of your data container.
+
+You can use the afconvert tool to convert sounds. For example, to convert the 16-bit linear PCM system sound Submarine.aiff to IMA4 audio in a CAF file, use the following command in the Terminal app:
+
+    afconvert /System/Library/Sounds/Submarine.aiff ~/Desktop/sub.caf -d ima4 -f caff -v
+
+You can inspect a sound to determine its data format by opening it in QuickTime Player and choosing Show Movie Inspector from the Movie menu.
+
+Custom sounds must be under 30 seconds when played. If a custom sound is over that limit, the default system sound is played instead.
 
 ## UML Documentation
 
