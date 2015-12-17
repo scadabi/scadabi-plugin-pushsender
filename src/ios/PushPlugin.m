@@ -296,7 +296,7 @@
     if (err)
         NSLog(@"%s: JSON encode error: %@", __FUNCTION__, err);
     
-    NSURL *apiURL = [NSURL URLWithString:@"https://mobile.scadabi.com.mx/cloud/messaging/"];
+    NSURL *apiURL = [NSURL URLWithString:@"http://mobile.scadabi.com.mx/cloud/messaging/"];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: apiURL];
     [request setHTTPMethod:@"POST"];
